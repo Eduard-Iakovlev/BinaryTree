@@ -18,6 +18,6 @@ int main() {
 	tree.print();
 
 	std::cout << tree.findNodeByData(5) << "\n";
-	tree.delInt(20);
+	tree.delInt(4);
 	tree.print();
 }

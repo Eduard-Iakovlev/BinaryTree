@@ -151,9 +151,10 @@ void BinaryTree::delInt(int deldata)
         }
         // если удаляемый узел является корневым узлом, то установить корень дочернему
         else root = childe;
+        childe->parent = current->parent;
+
     }
-    delete current;
-}
+ }
 // проверка является ли узел листом        
 bool BinaryTree::isLeaf(Node* check) {
     return check->leftChild == nullptr
