@@ -45,3 +45,25 @@ private:
     Node* root; // корневой узел
 };
 #endif
+
+
+// симметричный обход
+//void BinaryTree::symmetricWalk(int output_array[]) {
+//    if (root != nullptr)
+//    {
+//        int counter = 0;
+//        symmetricWackInner(output_array, counter, root);
+//    }
+//}
+//
+//void BinaryTree::symmetricWackInner(int output_array[], int& counter, Node* current) {
+//    // обработали левый
+//    if (current->leftChild != nullptr) {
+//        symmetricWackInner(output_array, counter, current->leftChild);
+//    }
+//    output_array[counter++] = current->data; // вывели себя
+//    //обработали правый
+//    if (current->rightChild != nullptr) {
+//        symmetricWackInner(current->rightChild);
+//    }
+//}

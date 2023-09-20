@@ -158,9 +158,7 @@ void BinaryTree::delInt(int deldata)
 //симетричный обход с записью в массив
 void BinaryTree::symmetricWalk(int output_array[])
 {
-    if (root == nullptr) {
-        return;
-    }
+    if (root == nullptr) return;
     Node* min;
     Node* max;
     min = root;
@@ -182,8 +180,6 @@ void BinaryTree::symmetricWalk(int output_array[])
         else continue;
 
     }
-
-
 }
 // проверка является ли узел листом        
 bool BinaryTree::isLeaf(Node* check) {
