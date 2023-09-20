@@ -155,6 +155,36 @@ void BinaryTree::delInt(int deldata)
 
     }
  }
+//симетричный обход с записью в массив
+void BinaryTree::symmetricWalk(int output_array[])
+{
+    if (root == nullptr) {
+        return;
+    }
+    Node* min;
+    Node* max;
+    min = root;
+    max = root;
+    while (min->leftChild != nullptr) min = min->leftChild;
+    while (max->rightChild != nullptr) max = max->rightChild;
+
+    output_array[0] = min->data;
+    int min_data = min->data;
+    int counter = 1;
+    while (min_data <= max->data) {
+        min = root;
+        min_data++;
+        min = findNodeByData(min_data);
+        if (min != nullptr) {
+            output_array[counter] = min->data;
+            counter++;
+        }
+        else continue;
+
+    }
+
+
+}
 // проверка является ли узел листом        
 bool BinaryTree::isLeaf(Node* check) {
     return check->leftChild == nullptr

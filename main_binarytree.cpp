@@ -17,7 +17,16 @@ int main() {
 	
 	tree.print();
 
-	std::cout << tree.findNodeByData(5) << "\n";
-	tree.delInt(4);
-	tree.print();
+	std::cout << tree.findNodeByData(20) << "\n";
+	//tree.delInt(4);
+	//tree.print();
+	std::cout << "\n";
+
+	int arr[10];
+	tree.symmetricWalk(arr);
+
+	for (int i = 0; i < 10; i++) {
+		std::cout << arr[i] << " ";
+	}
+
 }

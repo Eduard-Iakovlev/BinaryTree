@@ -30,8 +30,9 @@ public:
     Node* findMinNodata(Node* min);
     // удаление элемента
     void delInt(int deldata);
+    //симетричный обход с записью в массив
+    void symmetricWalk(int output_array[]);
 
-    //friend Table print(BinaryTree& tree);
 
 private:
     //void setNewChild(Node* child, Node* newChild = nullptr);
